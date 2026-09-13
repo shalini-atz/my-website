@@ -8,9 +8,11 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div id="soft-aurora" aria-hidden="true"></div>
+
   <header>
     <nav>
-      <a class="logo" href="/">My Website</a>
+      <a class="logo" href="./">My Website</a>
 
       <div>
         <a href="#about">About</a>
@@ -26,12 +28,12 @@
       <a class="button" href="#about">Learn more</a>
     </section>
 
-    <section id="about">
+    <section id="about" class="content-card">
       <h2>About me</h2>
       <p>Replace this with information about you or your business.</p>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="content-card">
       <h2>Contact</h2>
       <p>Email me at <a href="mailto:you@example.com">you@example.com</a>.</p>
     </section>
@@ -41,6 +43,7 @@
     <p>© <span id="year"></span> My Website</p>
   </footer>
 
+  <script type="module" src="soft-aurora.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

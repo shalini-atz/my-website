@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Linguasing | Shalini</title>
+  <link rel="stylesheet" href="../../style.css">
+  <link rel="stylesheet" href="../../project.css">
+
+</head>
+
+<body>
+  <div id="soft-aurora" aria-hidden="true"></div>
+
+  <header class="site-header project-header">
+    <a class="back-link" href="../../index.html#projects">
+      ← Back to projects
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="../../index.html#about">About</a>
+      <a href="../../index.html#projects">Projects</a>
+      <a href="../../index.html#contact">Contact</a>
+    </nav>
+
+
+  </header>
+
+  <main class="project-page">
+    <h1>Linguasing</h1>
+
+    <p>
+      A Figma concept that combines music discovery with language learning,
+      allowing listeners to explore song lyrics in different writing systems.
+    </p>
+
+    <section class="story-row">
+      <figure>
+        <img
+          src="../../images/Linguasing1.png"
+          alt="Linguasing loading, home and song-library screens"
+        >
+        <figcaption>The loading, discovery and song-library experience.</figcaption>
+      </figure>
+
+      <div class="story-copy">
+        <h2>The Idea</h2>
+        <p>
+          As a long-time listener of Kpop (8 years) and being curious about music in languages
+          I cannot even speak, I always found myself, trying to search for translations or learning
+          through different websites and youtube videos on how to sing a song that I love. Unfortunately,
+          all these solutions either lacked one feature, but had another feature which I enjoyed, so I
+          settled for switching between sites and videos. The idea of Linguasing is to combine all these
+          features into one.
+        </p>
+      </div>
+    </section>
+
+    <section class="story-row">
+      <div class="story-copy">
+        <h2>The lyric experience</h2>
+        <p>
+          Users can switch between Hangul (Korean
+          writing system), romanisation or a combined view. The
+          colour treatment distinguishes each representation while keeping the
+          original lyrics visually prominent and easy to follow. This helps with
+          the initial learning stages of trying to sing a song, with a writing
+          system the user is familiar with, but then once a user is confident about
+          their reading skills, they can try to learn by directly reading Hangul,
+          for example. 
+        </p>
+      </div>
+
+      <figure>
+        <img
+          src="../../images/Linguasing2.png"
+          alt="Three Linguasing lyric display options"
+        >
+        <figcaption>Hangul, romanised and combined lyric modes.</figcaption>
+      </figure>
+    </section>
+
+    <section class="story-row">
+      <figure>
+        <img
+          src="../../images/Hangul.png"
+          alt="Linguasing loading, home and song-library screens"
+        >
+        <figcaption>The loading, discovery and song-library experience.</figcaption>
+      </figure>
+
+      <div class="story-copy">
+        <h2>The Plan</h2>
+        <p>
+          I would build Linguasing with <strong class="pink-highlight">Vue.js</strong>
+          for the interface and a <strong class="pink-highlight">Node.js/Express</strong>
+          backend connected to <strong class="pink-highlight">SQLite</strong>. The
+          <strong class="pink-highlight">Spotify Web API</strong> would let users search
+          for songs and display track information, while an embedded
+          <strong class="pink-highlight">Spotify player</strong> would handle normal
+          playback. SQLite would store the lyric versions, translations and saved songs.
+          Users could switch between Hangul, romanisation and a combined view as they
+          learn. I would also like to add slower playback speeds so users can practise
+          difficult lines at their own pace. I would start with one song, test the
+          learning experience, then gradually add more.
+        </p>
+      </div>
+    </section>
+
+
+  </main>
+
+  <footer>
+  </footer>
+
+  <script type="module" src="../../soft-aurora.js"></script>
+</body>
+</html>

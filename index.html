@@ -2,48 +2,233 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="A short description of my website">
-  <title>My Website</title>
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
+
+  <meta
+    name="description"
+    content="Shalini's personal portfolio and web development projects."
+  >
+
+  <title>Shalini | Creative Developer</title>
+
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <div id="soft-aurora" aria-hidden="true"></div>
+    <header class="site-header">
 
-  <header>
-    <nav>
-      <a class="logo" href="./">My Website</a>
-
-      <div>
+      <nav aria-label="Main navigation">
         <a href="#about">About</a>
+        <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="portfolio-hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Hello, I’m Shalini!</p>
+        <p class="eyebrow2">I'm an Aspiring:</p>
+
+        <h1>
+          UI/UX Designer/<br>
+          <span>Full-Stack Developer</span>
+        </h1>
+
+        <p class="hero-description">
+          Passionate about understanding people’s needs and solving problems.
+        </p>
+
+        <div class="hero-details">
+          <p>
+            <strong>Bachelor</strong>
+            Technical Computer Science @ Univeristy of Twente
+          </p>
+
+          <p>
+            <strong>Skills</strong>
+            Python, Java, Vue.js, HTML, CSS, PostgreSQL, and a foundation in: Laravel, PHP, and SQLite
+          </p>
+        </div>
       </div>
-    </nav>
-  </header>
 
-  <main>
-    <section class="hero">
-      <h1>Welcome to my website</h1>
-      <p>I designed and built this website myself.</p>
-      <a class="button" href="#about">Learn more</a>
+      <!-- Replace portrait.jpg with your own photograph -->
+      <div class="portrait">
+        <div class="portrait-outline" aria-hidden="true"></div>
+
+        <img
+          src="images/Picture_Of_Me.jpg"
+          alt="Portrait of Shalini"
+        >
+      </div>
     </section>
 
+  <!-- Remaining page content -->
+  <main class="page-content">
     <section id="about" class="content-card">
+
       <h2>About me</h2>
-      <p>Replace this with information about you or your business.</p>
+      <p>
+        I’m a third-year Technical Computer Science student at the University of Twente with a passion for 
+        full-stack development and UI/UX design. I enjoy the whole process of building a digital product: 
+        understanding the problem, thinking through how people will use it, and bringing the solution to life 
+        through code. I’m also curious about embedded systems and the ways software can interact with the physical
+        world.</p>
+
+        <h3>Soft Skills</h3>
+        <p>Working with others is a big part of what motivates me. I’m comfortable contributing as a team
+        member or stepping into a leadership role when needed. Either way, I try to create an environment where
+        people can share ideas, learn from one another, and do their best work.</p>
+        
+        <h3>Hobbies</h3>
+        <p>When I’m away from my computer, 
+        I’m usually watching 
+        <span class="note">
+          <button class="note-trigger" type="button">Formula 1</button>
+          <span class="note-card">
+            <span class="note-titlebar">✦ RACE WEEKEND <span>▽ ○ ×</span></span>
+            <span class="note-body">
+              <img src="images/Mercedes_F1.jpg" alt="Formula 1">
+              <span>My favourite way to spend a Sunday.</span>
+            </span>
+          </span>
+        </span>
+        , listening to 
+
+        <span class="note note--music">
+          <button class="note-trigger" type="button">ATEEZ</button>
+          <span class="note-card">
+            <span class="note-titlebar">✦ FAVOURITE SONG <span>▽ ○ ×</span></span>
+            <span class="note-body">
+            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/3lnok1hUcplIhIqAHhqOis?utm_source=generator&si=db8b339203c74c78" 
+            width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; 
+            encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </span>
+          </span>
+        </span>
+        , or attempting to read
+        
+        <span class="note note--book">
+          <button class="note-trigger" type="button">classics</button>
+          <span class="note-card">
+            <span class="note-titlebar">✦ CURRENTLY READING <span>▽ ○ ×</span></span>
+            <span class="note-body">
+              <img src="images/Book.jpg" alt="Book">
+            </span>
+        </span>(a new hobby
+        I'm trying to pick up).</p>
+      </p>
     </section>
+
+    <section id="projects" class="content-card">
+      <h2>My projects</h2>
+
+      <div class="project-list">
+        <article class="project-card">
+          <img
+            src="images/BasketballIcon.png"
+            alt="Basketball Shooting Guidance App"
+          >
+
+          <div class="project-card-content">
+            <h3>
+              <a href="Projects/Basketball/index.html">
+                Basketball Shooting Guidance App (UI/UX Design)
+              </a>
+            </h3>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img
+            src="images/LinguasingIcon.png"
+            alt="Screenshot of the Linguasing project"
+          >
+
+          <div class="project-card-content">
+            <h3>
+              <a href="Projects/Linguasing/index.html">
+                Linguasing (Figma Design)
+              </a>
+            </h3>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img
+            src="images/I-SPI.jpg"
+            alt="Screenshot of my third project"
+          >
+
+          <div class="project-card-content">
+            <h3>
+              <a href="Projects/I-SPI/index.html">
+                I-SPI (Embedded Systems)
+              </a>
+            </h3>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img
+            src="images/QuotesGarden.png"
+            alt="Screenshot of my 4th project"
+          >
+
+          <div class="project-card-content">
+            <h3>
+              <a href="Projects/QuotesGarden/index.html">
+                Quotes Garden (Mobile App) (IN PROGRESS)
+              </a>
+            </h3>
+          </div>
+        </article>
+
+
+        <article class="project-card">
+          <img
+            src="images/QuotesGarden.png"
+            alt="Screenshot of my 4th project"
+          >
+
+          <div class="project-card-content">
+            <h3>
+              <a href="Projects/TaskManSys/index.html">
+                Task Management System (Full-Stack)
+              </a>
+            </h3>
+          </div>
+        </article>
+      </div>
+    </section>
+
+
 
     <section id="contact" class="content-card">
-      <h2>Contact</h2>
-      <p>Email me at <a href="mailto:you@example.com">you@example.com</a>.</p>
+      <h2>Contact me</h2>
+
+      <a class="button" href="mailto:shalinimacharla8@.gmail.com">
+        Email
+      </a>
+      <br>
+
+      <a class="button" href="https://www.linkedin.com/in/shalini-m-8m1t/">
+        LinkedIn
+      </a>
     </section>
   </main>
 
   <footer>
-    <p>© <span id="year"></span> My Website</p>
   </footer>
 
+
   <script type="module" src="soft-aurora.js"></script>
+
+
   <script src="script.js"></script>
 </body>
 </html>

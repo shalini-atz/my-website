@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Basketball Shooting Guidance App | Shalini</title>
+  <link rel="stylesheet" href="../../style.css">
+  <link rel="stylesheet" href="../../project.css">
+
+</head>
+
+<body>
+  <div id="soft-aurora" aria-hidden="true"></div>
+
+  <header class="site-header project-header">
+    <a class="back-link" href="../../index.html#projects">
+      ← Back to projects
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="../../index.html#about">About</a>
+      <a href="../../index.html#projects">Projects</a>
+      <a href="../../index.html#contact">Contact</a>
+    </nav>
+
+
+  </header>
+
+  <main class="project-page">
+    <h1>Basketball Shooting Guidance App</h1>
+
+    <p>
+      A UI/UX concept that helps beginner basketball players practice their
+      shooting technique and receive clear, understandable feedback.
+    </p>
+
+    <section class="story-row">
+      <figure>
+        <img
+          src="../../images/Basketball1.png"
+          alt="A player practising a basketball shot outdoors"
+        >
+        <figcaption>Observing how players practice independently.</figcaption>
+      </figure>
+
+      <div class="story-copy">
+        <h2>The challenge</h2>
+        <p>
+          Improving a basketball shot can be difficult without a coach nearby.
+          Beginners may struggle to notice small details in their posture and
+          movement, so we explored how digital guidance could make independent
+          practice more useful. Through interviews, demos, lo-fi and hi-fi 
+          prototyping, we built an application based on multiple rounds of
+          user-feedback.
+        </p>
+      </div>
+    </section>
+
+    <section class="story-row">
+      <div class="story-copy">
+        <h2>The approach</h2>
+        <p>
+          The recording flow guides the player into frame, provides practical
+          setup tips and keeps the most important actions visible. When the head
+          and feet of a player are visible, the camera visible to the player will
+          have a green outline, indicating that the player is in the correct position.
+        </p>
+        <p>
+          Once the recording starts, the player takes a shot and stops the recording.
+          The following screen will include all the feedback the player needs on his form
+          and this is calculated by using Mediapipe's Pose Estimation and getting the angles
+          of the knees and elbows to check if they are within the suggested limits of a 
+          research paper we were referencing.
+        </p>
+        <p>
+          Whilst testing our lo-fi prototype,
+          we as a team, realised that we missed out a clearly obvious point, that one of our
+          test users had pointed out immediately: You get yourself into position, but
+          then you have to go back and press the start button!
+        </p>
+        <p>
+          So for our hi-fi prototyping, we shifted more of our focus onto the flow of the
+          product overall, instead of trying to add the most impressive features.
+        </p>
+      </div>
+
+      <figure>
+        <img
+          src="../../images/Basketball3.png"
+          alt="The app screen for recording a basketball shot"
+        >
+        <figcaption>The guided shot-recording screen.</figcaption>
+      </figure>
+    </section>
+
+    <section class="story-row">
+      <figure>
+        <img
+          src="../../images/Basketball4.png"
+          alt="Detailed strengths and improvements feedback screen"
+        >
+        <figcaption>Feedback separated into strengths and improvements.</figcaption>
+      </figure>
+
+      <div class="story-copy">
+        <h2>The Tools</h2>
+        <p>
+         For the high fidelity prototype, we built a web application with <strong class="pink-highlight">Vue.js</strong> and used <strong class="pink-highlight">Google MediaPipe Pose</strong>
+         to track body landmarks and analyse shooting form. Browser tools allowed us to access the
+         camera, record video, display visual feedback, and store recordings locally. We tested the prototypes
+         with participants and used observations and interviews, including some voice recordings, to guide
+         improvements to the design.
+        </p>
+      </div>
+    </section>
+
+    <section class="story-row">
+      <div class="story-copy">
+        <h2>The outcome</h2>
+        <p>
+          The final assessment summarises the most important shooting metrics in
+          one place. This project strengthened my understanding of information
+          hierarchy, feedback design and building an experience around a real
+          user need. Interviewing users with a prototype, receiving feedback,
+          then trying to improve the product was my favourite part of this project.
+        </p>
+      </div>
+
+      <figure>
+        <img
+          src="../../images/Basketball5.png"
+          alt="Overall basketball shooting assessment screen"
+        >
+        <figcaption>The overall assessment and key shooting metrics.</figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <footer>
+  </footer>
+
+  <script type="module" src="../../soft-aurora.js"></script>
+</body>
+</html>

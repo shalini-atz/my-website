@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>I-SPI | Shalini</title>
+  <link rel="stylesheet" href="../../style.css">
+  <link rel="stylesheet" href="../../project.css">
+
+</head>
+
+<body>
+  <div id="soft-aurora" aria-hidden="true"></div>
+
+  <header class="site-header project-header">
+    <a class="back-link" href="../../index.html#projects">
+      ← Back to projects
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="../../index.html#about">About</a>
+      <a href="../../index.html#projects">Projects</a>
+      <a href="../../index.html#contact">Contact</a>
+    </nav>
+
+
+  </header>
+
+  <main class="project-page">
+    <h1>I-SPI</h1>
+
+    <p>
+      A head-worn assistive prototype designed to help visually impaired people
+      locate nearby objects using voice commands, computer vision and sound cues.
+    </p>
+
+    <section class="story-row">
+      <figure>
+        <img
+          src="../../images/I-SPI3.jpg"
+          alt="Electronic components prepared for the I-SPI prototype"
+        >
+        <figcaption>Exploring the hardware needed for a wearable object-finding device.</figcaption>
+      </figure>
+
+      <div class="story-copy">
+        <h2>The Challenge</h2>
+        <p>
+          We designed I-SPI to help people with visual
+          impairments find objects on a table or elsewhere within reach. The user names
+          what they are looking for, and the wearable device uses sound to guide them
+          towards it. We also wanted to experiment with different types of sensors to
+          learn how they could work together to detect an object, determine its position
+          and measure its distance. Our goal was to make small, everyday tasks easier
+          and support greater independence.
+        </p>
+      </div>
+    </section>
+
+    <section class="story-row">
+      <div class="story-copy">
+        <h2>The Approach</h2>
+        <p>
+          After the user presses a button and names an object, speech-to-text
+          passes the request to an object-detection model. The camera locates the
+          object in its view, and its position controls the left and right buzzers.
+          A servo aims the ultrasonic sensor towards it; as the measured distance
+          decreases, the buzzers beep faster. We also tested voice authentication
+          to help prevent someone else from using the device.
+        </p>
+      </div>
+
+      <figure>
+        <img
+          src="../../images/I-SPI2.jpg"
+          alt="Servo motors and controller boards used in I-SPI"
+        >
+        <figcaption>Testing the servo and control hardware.</figcaption>
+      </figure>
+    </section>
+
+    <section class="story-row">
+      <figure>
+        <img
+          src="../../images/I-SPI.jpg"
+          alt="Close-up of the I-SPI camera and ultrasonic sensor assembly"
+        >
+        <figcaption>The camera and ultrasonic sensor mounted on the prototype.</figcaption>
+      </figure>
+
+      <div class="story-copy">
+        <h2>The Tools</h2>
+        <p>
+          We used a <strong class="pink-highlight">Raspberry Pi</strong> to run
+          <strong class="pink-highlight">Vosk</strong> for speech-to-text and
+          <strong class="pink-highlight">YOLO-E</strong> for object detection.
+          The hardware included a <strong class="pink-highlight">microphone</strong>,
+          <strong class="pink-highlight">camera</strong>,
+          <strong class="pink-highlight">ultrasonic distance sensor</strong>,
+          <strong class="pink-highlight">servo motors</strong> and
+          <strong class="pink-highlight">buzzers</strong> for directional feedback.
+        </p>
+      </div>
+    </section>
+
+    <section class="story-row">
+      <div class="story-copy">
+        <h2>The Outcome</h2>
+        <p>
+          We assembled a wearable prototype and manually tested object detection,
+          servo movement, distance measurements and buzzer feedback. The project
+          showed how these parts could work together, while also revealing
+          practical challenges with the sensors, servos, weight and cable
+          management. A lighter build, more reliable speech recognition and a
+          wider angle camera would be valuable next improvements. This project strengthened 
+          my leadership skills and taught me the importance of understanding a project 
+          from end to end. I enjoyed balancing the bigger picture with the technical details
+          so I could support the team and help us make informed decisions.
+        </p>
+      </div>
+
+      <figure>
+        <img
+          src="../../images/I-SPI4.jpg"
+          alt="A person wearing the completed I-SPI prototype"
+        >
+        <figcaption>The assembled wearable prototype.</figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <footer>
+  </footer>
+
+  <script type="module" src="../../soft-aurora.js"></script>
+</body>
+</html>
